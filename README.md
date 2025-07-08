@@ -1,6 +1,6 @@
-# 💻 Aryan Malik — Hacker-Themed Terminal Portfolio
+# 💻 Aryan Malik — Terminal Themed Portfolio
 
-This is my personal portfolio website built with a hacker-style terminal interface. It allows users to explore my background, skills, certifications, and experience using simulated terminal commands.
+This is my personal portfolio website built with a terminal interface. It allows users to explore my background, skills, certifications, and experience using simulated terminal commands.
 
 🔗 **Live Demo**: [https://aryanmalik-iet.github.io/hacker-portfolio](https://aryanmalik-iet.github.io/hacker-portfolio)
 
