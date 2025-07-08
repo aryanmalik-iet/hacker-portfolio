@@ -19,7 +19,7 @@
        container.appendChild(tag);
      }
      
-     setInterval(spawnTag, 300);
+     setInterval(spawnTag, 450);
     const output = document.getElementById("output");
     const input = document.getElementById("terminal-cmd");
     const commands = {
@@ -78,7 +78,7 @@
         <li>Trivia Week 1 <br> 
         <span class="edu-sub1">Issued: Jun 2025<br>Credential ID 16668501</span> <br><a class="button-link" href="https://www.cloudskillsboost.google/public_profiles/d9334990-b257-4f7e-ba80-07dd2a806841/badges/16668501" target="_blank">Show Credential</a></li><br>
         <li>Soft Skills Course Online - Complete Professional Development Training <br> 
-        <span class="edu-sub1">Issued: Jun 2025<br>Credential ID N/A</span></li><br>
+        <span class="edu-sub1">Issued: Jun 2025<br>Credential ID N/A</span><br><a class="button-link" href="https://www.geeksforgeeks.org/certificate/8d79e10d46f125dad56c0f37ea46b1c4?utm_source=socials&utm_medium=cc_link" target="_blank">Show Credential</a></li><br>
         <li>AUCTUM Participation – Hult Prize 2025<br> 
         <span class="edu-sub1">Issued: Nov 2024<br>Credential ID N/A</span> <br><a class="button-link" href="https://media.licdn.com/dms/image/v2/D562DAQGZeOP8fAseNQ/profile-treasury-image-shrink_800_800/B56Zed1OXKHoAY-/0/1750699666540" target="_blank">Show Credential</a></li><br>
         <li>E-auction IEEE Day <br> 
