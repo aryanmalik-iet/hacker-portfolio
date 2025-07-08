@@ -1,1 +1,147 @@
-fff
+:root {
+      --bg: #101010;
+      --fg: #00ff00;
+      --subtle: #aca06d;
+      --highlight: #ff5555;
+      --accent: #fd971f;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: 'Fira Code', monospace;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .terminal {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-left: 2px solid var(--fg);
+      position: relative;
+      z-index: 10;
+      flex-grow: 1;              /* ensures content fills available space */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* aligns content to the top */
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      position: absolute;
+      bottom: -5vh;
+      left: 0;
+      opacity: 0.1;
+      font-size: 1.2rem;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      animation: floatUp 12s ease-in-out forwards, tagBlink 1.5s ease-in-out infinite;
+      z-index: 0;
+    }
+    .tag::selection {
+      background: none;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-70vh) translateX(30vh) rotate(0deg);
+        
+      }
+      75% {
+        transform: translateY(-20vh) translateX(-30vh) rotate(0deg);
+        
+      }
+      100% {
+        transform: translateY(-100vh) translateX(-60vh) rotate(0deg);
+      }
+    }
+    .terminal-input input {
+      background: none;
+      border: none;
+      color: inherit;
+      font: inherit;
+      width: 90%;
+      outline: none;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1rem;
+      background-color: var(--fg);
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+    0%, 75% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+    }
+    @keyframes tagBlink {
+      0%, 25%, 75%, 100% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 0.08;
+      }
+    }
+
+
+
+
+    a { color: var(--highlight); text-decoration: none; }
+    .button-link {
+      background: #f21f1f;
+      opacity: 0.6;
+      color: var(--bg);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .edu-sub {
+    font-size: 1.1rem;
+    font-weight: 150;
+    color: #c9194b;
+    }
+    .edu-sub1 {
+    font-size: 0.8rem;
+    font-weight: 150;
+    color: #c9194b;
+    }
+    .via {
+      display: inline-block;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      color: #c9194b;
+      margin-left: 0.5rem;
+      position: relative;
+    }
+    
+    .via::before {
+      content: "↳"; 
+      font-weight: 400;
+      margin-right: 0.3rem;
+      color: #c9194b; 
+    }
+
+
+    ul { padding-left: 1.5rem; }
+    #floating-tags-container {
+       position: fixed;
+       inset: 0;
+       overflow: hidden;
+       pointer-events: none; /* this lets clicks pass through */
+       z-index: 0;
+    }
+    #output {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
