@@ -32,13 +32,20 @@ This is my personal portfolio website built with a hacker-style terminal interfa
 ## 📁 Folder Structure
 
 /hacker-portfolio
+
 │
 ├── index.html
+
 ├── /css
+
 │ └── style.css
+
 ├── /js
+
 │ └── script.js
+
 ├── README.md
+
 
 
 ---
