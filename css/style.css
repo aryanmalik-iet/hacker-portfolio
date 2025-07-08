@@ -93,9 +93,7 @@
         opacity: 0.08;
       }
     }
-
-
-
+   /* Author: Aryan Malik | GitHub: @aryanmalik-iet */
 
     a { color: var(--highlight); text-decoration: none; }
     .button-link {
@@ -145,3 +143,5 @@
       max-height: 60vh;
       overflow-y: auto;
     }
+/* Author: Aryan Malik | GitHub: @aryanmalik-iet */
+
