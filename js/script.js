@@ -1,4 +1,4 @@
-     const tags = ['<html>', '<body>', '<script>', 'Python', 'CSS', 'JS', 'C++', 'HTML', 'GitHub', '<style>', '<main>'];
+     const tags = ['<html>', '<body>', '<script>', 'Python', 'CSS', 'JS', 'C++', 'HTML', 'GitHub', '<style>', '<main>','<aryan-iet.git>'];
      const colors = ['#ff5555', '#fd971f', '#00ff00', '#66d9ef', '#f92672', '#ae81ff'];
      
      const container = document.getElementById('floating-tags-container');
@@ -88,6 +88,8 @@
       🔗 LinkedIn: <a href="https://www.linkedin.com/in/aryanmaliksbps/" target="_blank">linkedin.com/in/aryanmaliksbps</a><br>
       🐱 GitHub: <a href="https://github.com/aryanmalik-iet" target="_blank">github.com/aryanmalik-iet</a>`
     };
+       // Developed by Aryan Malik | https://github.com/aryanmalik-iet
+
 
     function runCommand(cmd) {
       const c = cmd.toLowerCase();
@@ -108,4 +110,7 @@
     document.querySelector('.terminal').addEventListener('click', () => {
     document.getElementById('terminal-cmd').focus();
    });
+    console.log("%cBuilt by Aryan Malik - github.com/aryanmalik-iet", "color: #00ff00; font-size: 14px;");
+
+// Developed by Aryan Malik | https://github.com/aryanmalik-iet
 
