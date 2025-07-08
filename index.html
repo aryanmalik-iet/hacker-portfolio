@@ -148,7 +148,12 @@
        overflow: hidden;
        pointer-events: none; /* this lets clicks pass through */
        z-index: 0;
-}
+    }
+    #output {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+
 
   </style>
 </head>
@@ -295,6 +300,10 @@
         input.value = "";
       }
     });
+    document.querySelector('.terminal').addEventListener('click', () => {
+    document.getElementById('terminal-cmd').focus();
+   });
+
   </script>
 </body>
 </html>
